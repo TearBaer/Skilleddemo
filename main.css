@@ -52,7 +52,7 @@ body {
 .header {
     background-image: url('assets/bg_header.jpg');
     background-size: cover;
-    background-position: 45% 25%;
+    background-position: 45% 50%;
     position: relative;
 	max-height: 30rem;
 }
@@ -211,7 +211,22 @@ and (max-width : 580px) {
         font-weight: 700;
     }
     .header .container {
+        padding-top: 0.5em;
         margin-left: 2em;
         margin-right: 0;
+    }
+    .description {
+        top: 1em;
+    }
+    .description p {
+        width: clamp(10rem, 30vw, 40rem);
+        text-align: center;
+        margin-left: calc(50vw - 35vw);
+    }
+    .btn-header {
+        display: none !important;
+    }
+    .navbar-brand {
+        margin-left: calc(50vw - 140px);
     }
   }
